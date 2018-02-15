@@ -1,0 +1,13 @@
+a = [1,3,5,7,9,11]
+b = [2,4,6,8,10,12]
+
+def intersect(set1, set2):
+    sets = [a and b]    
+    for element in set1:
+        if element in set2:
+            sets.append(element)        
+    return sets
+
+c = intersect(a,b)
+
+print(c)
